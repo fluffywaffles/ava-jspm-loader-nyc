@@ -1,0 +1,52 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "nyc --cache ava"
+  },
+  "author": "kdex",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "jspm": "^0.17.0-beta.22",
+    "npm": "^3.10.3",
+    "nyc": "^6.6.1"
+  },
+  "ava": {
+    "babel": {
+      "presets": [
+        "es2015",
+        "stage-0",
+        "react"
+      ]
+    },
+    "require": [
+      "babel-polyfill"
+    ]
+  },
+  "jspm": {
+    "name": "example",
+    "main": "example.js",
+    "directories": {
+      "packages": "packages"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.12"
+    }
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "sourceMap": false,
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ],
+    "all": true
+  }
+}
