@@ -1,11 +1,12 @@
 import test from "ava";
-/* This is an alias defined by JSPM */
+/* `example` is an alias defined by JSPM */
 import example from "example/Home.js";
-/* This is an alias defined by module-alias */
-import example2 from "client/Home.js";
+/* `client` is an alias defined by `module-alias`. (Babel should resolve that.) */
+import client from "client/Home.js";
 test("This is an example", t => {
-	console.log(example, example2);
-	if (example && example2) {
+	console.log(example);
+	console.log(client);
+	if (example && client) {
 		t.pass();
 	}
 	else {
