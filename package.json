@@ -18,6 +18,10 @@
     "nyc": "^6.6.1"
   },
   "ava": {
+    "files": [
+      "test/**/*",
+      "!node_modules/**/*"
+    ],
     "babel": {
       "presets": [
         "es2015",
