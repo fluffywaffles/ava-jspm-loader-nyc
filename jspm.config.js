@@ -10,7 +10,8 @@ SystemJS.config({
     "paths": {
       "npm:": "packages/npm/",
       "github:": "packages/github/",
-      "example/": "src/client/"
+      "example/": "src/client/",
+      "client/": "src/client/"
     }
   },
   devConfig: {
