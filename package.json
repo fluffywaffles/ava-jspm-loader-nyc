@@ -9,6 +9,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "ava": "^0.15.2",
+    "ava-jspm-loader": "^1.0.2",
     "babel-polyfill": "^6.9.1",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
@@ -25,7 +26,8 @@
       ]
     },
     "require": [
-      "babel-polyfill"
+      "babel-polyfill",
+      "ava-jspm-loader"
     ]
   },
   "jspm": {

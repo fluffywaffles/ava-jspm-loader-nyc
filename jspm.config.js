@@ -1,6 +1,6 @@
 SystemJS.config({
   paths: {
-    "server/": "dist/server/js/"
+    "server/": "src/server/"
   },
   nodeConfig: {
     "paths": {
