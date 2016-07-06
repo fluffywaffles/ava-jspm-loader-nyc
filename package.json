@@ -89,6 +89,10 @@
     "include": [
       "src/**/*.js"
     ],
+    "exclude": [
+      "**/test/**/*",
+      "packages/**/*"
+    ],
     "sourceMap": false,
     "instrument": false,
     "require": [
